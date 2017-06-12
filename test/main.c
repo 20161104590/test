@@ -10,6 +10,19 @@
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    printf("Hello, World!\n");
-    return 0;
-}
+        int a[10];
+        int i,j,x;
+        for(i=0;i<10;i++)
+            scanf("%d",&a[i]);
+        for(i=0;i<9;i++)
+            for(j=0;j<9-i;j++)
+                if(a[j+1]<a[j])
+                {
+                    x=a[j];
+                    a[j]=a[j+1];
+                    a[j+1]=x;
+                }
+        for(j=0;j<9;j++)
+            printf("%d",a[j]);
+        return 0;
+    }
