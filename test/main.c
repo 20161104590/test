@@ -12,6 +12,7 @@ int main(int argc, const char * argv[]) {
     // insert code here...
         int a[10];
         int i,j,x;
+        printf("输入10个数字:");
         for(i=0;i<10;i++)
             scanf("%d",&a[i]);
         for(i=0;i<9;i++)
