@@ -10,20 +10,28 @@
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-        int a[10];
-        int i,j,x;
-        printf("输入10个数字:");
-        for(i=0;i<10;i++)
-            scanf("%d",&a[i]);
+    FILE *fi;
+    FILE *fo;
+    fi=fopen("//Users//a20161104590//Desktop//input","r+");
+    fo=fopen("//Users//a20161104590//Desktop//output","w");
+    int a[10];
+    int i,j,x;
+    fscanf(fi,"%d",&a[j]);
+    for(i=0;i<10;i++)
+        
         for(i=0;i<9;i++)
-            for(j=0;j<9-i;j++)
-                if(a[j+1]<a[j])
-                {
-                    x=a[j];
-                    a[j]=a[j+1];
-                    a[j+1]=x;
-                }
-        for(j=0;j<9;j++)
-            printf("%d",a[j]);
-        return 0;
+        for(j=0;j<9-i;j++)
+            if(a[j+1]<a[j])
+            {
+                x=a[j];
+                a[j]=a[j+1];
+                a[j+1]=x;
+            }
+    for(j=0;j<9;j++)
+    {
+        printf(" %d",a[j]);
+        fprintf(fo," %d",a[j]);
     }
+    return 0;
+}
+    
