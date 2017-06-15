@@ -26,6 +26,7 @@
 		DF8A12A71EEF6BFD005D289E /* input */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = input; path = ../../input; sourceTree = "<group>"; };
 		DF8B356A1EEE4083000C2394 /* test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = test; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF8B356D1EEE4084000C2394 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		DFF32F5C1EF275A800567C86 /* output */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = output; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				DF8B356D1EEE4084000C2394 /* main.c */,
+				DFF32F5C1EF275A800567C86 /* output */,
 				DF8A12A71EEF6BFD005D289E /* input */,
 			);
 			path = test;
